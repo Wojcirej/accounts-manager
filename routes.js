@@ -33,4 +33,10 @@ module.exports = function(app) {
   });
 
   app.post('/login', users.login);
+
+  app.get('/logout', function(req, res) {
+    req.session.destroy(function() {
+      res.redirect('/login');
+    });
+  });
 }
