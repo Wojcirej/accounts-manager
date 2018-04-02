@@ -16,6 +16,13 @@ module.exports = function(app) {
     }
   });
 
+  app.get('/signup', function(req, res) {
+    if(req.session.user) {
+      res.redirect('/');
+    };
+    res.render('signup', { msg: req.session.msg });
+  });
+
   app.get('/login', function(req, res) {
     if(req.session.user) {
       res.redirect('/');
