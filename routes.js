@@ -23,10 +23,14 @@ module.exports = function(app) {
     res.render('signup', { msg: req.session.msg });
   });
 
+  app.post('/signup', users.signup);
+
   app.get('/login', function(req, res) {
     if(req.session.user) {
       res.redirect('/');
     };
     res.render('login', { msg: req.session.msg} );
   });
+
+  app.post('/login', users.login);
 }
