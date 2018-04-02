@@ -4,7 +4,7 @@
   "description": "Technologies: - Node.js 8.9.4 - MongoDB 3.6.3 - AngularJS 1.6.9",
   "main": "auth_server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node auth_server.js"
   },
   "repository": {
     "type": "git",

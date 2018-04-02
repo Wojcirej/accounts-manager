@@ -5,7 +5,7 @@ var expressSession = require('express-session');
 var mongoStore = require('connect-mongo')({ session: expressSession });
 var mongoose = require('mongoose');
 require('./models/users_model.js');
-var conn = mongoose.connect('mongodb://localhost:27017/accounts-manager');
+var conn = mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/accounts-manager');
 var app = express();
 app.engine('.html', require('ejs').__express);
 app.set('views',__dirname + '/views');
@@ -17,7 +17,7 @@ app.use(expressSession({
   cookie: { maxAge: 60*60*1000 },
   store: new mongoStore({
     db: mongoose.connection.db,
-    url: "mongodb://localhost:27017/accounts-manager",
+    url: process.env.MONGODB_URI || "mongodb://localhost:27017/accounts-manager",
     collection: 'sessions'
   })
 }));
