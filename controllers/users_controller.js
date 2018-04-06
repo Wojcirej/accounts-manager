@@ -48,3 +48,37 @@ exports.signup = function(req, res) {
     }
   });
 };
+
+exports.getUserProfile = function(req, res) {
+  User.findOne({ _id: req.session.user })
+  .exec(function(error, user) {
+    if(!user) {
+      res.json(404, { error: 'User not found!'} );
+    }
+    else {
+      res.json(user);
+    };
+  });
+};
+
+exports.deleteUser = function(req, res) {
+  User.findOne({ _id: req.session.user })
+  .exec(function(error, user) {
+    if(user) {
+      user.remove(function(error) {
+        if(error) {
+          req.session.msg = error;
+        };
+        req.session.destroy(function() {
+          res.redirect('/login');
+        });
+      });
+    }
+    else {
+      req.session.msg = "User not found!";
+      req.session.destroy(function() {
+        res.redirect('/login');
+      });
+    };
+  });
+};

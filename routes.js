@@ -39,4 +39,17 @@ module.exports = function(app) {
       res.redirect('/login');
     });
   });
+
+  app.get('/user', function(req, res) {
+    if (req.session.user) {
+      res.render('user', { msg: req.session.msg });
+    }
+    else {
+      req.session.msg = 'Access denied!';
+      res.redirect('/login');
+    };
+  });
+
+  app.get('/user/profile', users.getUserProfile);
+  app.post('/user/delete', users.deleteUser);
 }
