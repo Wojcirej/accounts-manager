@@ -5,9 +5,6 @@ Technologies:
 - MongoDB 3.6.3
 - AngularJS 1.6.9
 
-Packages used:
-- express
-- ejs
-- mongodb
-- mongoose
-- connect-mongo
+# See online demo
+
+https://accounts-manager-mongo.herokuapp.com/
