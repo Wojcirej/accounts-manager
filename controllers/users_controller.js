@@ -82,3 +82,20 @@ exports.deleteUser = function(req, res) {
     };
   });
 };
+
+exports.updateUser = function(req, res) {
+  User.findOne({ _id: req.session.user })
+  .exec(function(error, user) {
+    user.set('email', req.body.email);
+    user.set('color', req.body.color);
+    user.save(function(error) {
+      if(error) {
+        res.session.error = error;
+      }
+      else {
+        req.session.msg = 'User has been updated.';
+      };
+      res.redirect('/user');
+    });
+  });
+};

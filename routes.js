@@ -52,4 +52,5 @@ module.exports = function(app) {
 
   app.get('/user/profile', users.getUserProfile);
   app.post('/user/delete', users.deleteUser);
+  app.post('/user/update', users.updateUser);
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="usersApp" ng-controller="userCtrl" ng-init="init()">
 <head>
   <title>User profile</title>
   <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
@@ -9,11 +9,11 @@
     <p class="form-header">Profile</p>
     <form method="POST" action="/user/update">
       <label>Username:</label>
-      <input type="text" name="username" disabled><br>
+      <input type="text" name="username" ng-model="user.username" disabled><br>
       <label>Email:</label>
-      <input type="email" name="email"><br>
+      <input type="email" name="email" ng-model="user.email"><br>
       <label>Favorite color:</label>
-      <input type="text" name="color"><br>
+      <input type="text" name="color" ng-model="user.color"><br>
       <input type="submit" value="Save changes">
     </form>
   </div>
@@ -21,5 +21,7 @@
     <input type="submit" value="Delete">
   </form>
   <hr><%= msg %>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="/static/js/userController.js"></script>
 </body>
 </html>
