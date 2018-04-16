@@ -2,9 +2,9 @@
   "name": "accounts-manager",
   "version": "1.0.0",
   "description": "Technologies: - Node.js 8.9.4 - MongoDB 3.6.3 - AngularJS 1.6.9",
-  "main": "auth_server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node auth_server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Wojcirej/accounts-manager#readme",
   "dependencies": {
+    "angular": "^1.6.9",
     "body-parser": "^1.18.2",
     "connect-mongo": "^2.0.1",
     "cookie-parser": "^1.4.3",

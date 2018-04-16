@@ -1,7 +1,7 @@
 var crypto = require('crypto');
 var express = require('express');
 module.exports = function(app) {
-  var users = require('./controllers/users_controller');
+  var users = require('./controllers/usersController');
   app.use('/static', express.static('./static')).
   use('/lib', express.static('../lib')
   );
@@ -42,7 +42,7 @@ module.exports = function(app) {
 
   app.get('/user', function(req, res) {
     if (req.session.user) {
-      res.render('user', { msg: req.session.msg });
+      res.render('show', { msg: req.session.msg });
     }
     else {
       req.session.msg = 'Access denied!';
@@ -50,7 +50,7 @@ module.exports = function(app) {
     };
   });
 
-  app.get('/user/profile', users.getUserProfile);
-  app.post('/user/delete', users.deleteUser);
-  app.post('/user/update', users.updateUser);
+  app.get('/user/profile', users.show);
+  app.post('/user/delete', users.destroy);
+  app.post('/user/update', users.update);
 }

@@ -11,7 +11,7 @@ exports.login = function(req, res) {
     if(!user) {
       error = "User not found";
     }
-    else if(user.hashed_password === hashPW(req.body.password.toString())) {
+    else if(user.hashedPassword === hashPW(req.body.password.toString())) {
       req.session.regenerate(function() {
         req.session.user = user.id;
         req.session.username = user.username;
@@ -33,7 +33,7 @@ exports.login = function(req, res) {
 
 exports.signup = function(req, res) {
   var user = new User({ username: req.body.username });
-  user.set('hashed_password', hashPW(req.body.password));
+  user.set('hashedPassword', hashPW(req.body.password));
   user.set('email', req.body.email);
   user.save(function(error) {
     if(error) {
@@ -49,7 +49,7 @@ exports.signup = function(req, res) {
   });
 };
 
-exports.getUserProfile = function(req, res) {
+exports.show = function(req, res) {
   User.findOne({ _id: req.session.user })
   .exec(function(error, user) {
     if(!user) {
@@ -61,7 +61,7 @@ exports.getUserProfile = function(req, res) {
   });
 };
 
-exports.deleteUser = function(req, res) {
+exports.destroy = function(req, res) {
   User.findOne({ _id: req.session.user })
   .exec(function(error, user) {
     if(user) {
@@ -83,7 +83,7 @@ exports.deleteUser = function(req, res) {
   });
 };
 
-exports.updateUser = function(req, res) {
+exports.update = function(req, res) {
   User.findOne({ _id: req.session.user })
   .exec(function(error, user) {
     user.set('email', req.body.email);
