@@ -1,3 +1,22 @@
+.navbar {
+  position: sticky;
+  top: 5px;
+  background-color: #333333;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 14px;
+  color: #F2F2F2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
 div.form-container {
   display: inline-block;
   border: 4px ridge blue;
