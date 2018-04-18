@@ -1,3 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+  background-color: #76B852;
+}
+
 .navbar {
   position: sticky;
   top: 5px;
@@ -17,42 +23,64 @@
   background-color: #F2F2F2;
 }
 
-div.form-container {
-  display: inline-block;
-  border: 4px ridge blue;
-  width: 280px;
-  border-radius: 10px;
-  margin: 10px;
+.login-page {
+  width: 360px;
+  padding: 8% 0 0 0;
+  margin: auto;
 }
 
-p.form-header {
-  margin: 0px;
-  font: 24px bold;
-  color: white;
-  background: blue;
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: auto;
+  padding: 45px;
   text-align: center;
 }
 
-form {
-  margin: 10px;
+.form input {
+  font-family: "Lato", sans-serif;
+  outline: 0;
+  background: #F2F2F2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-label {
-  width: 80px;
-  display: inline-block;
+.form input[type=submit] {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-input {
-  border: 3px ridge blue;
-  border-radius: 5px;
-  padding: 3px;
+.form input[type=submit]:hover {
+  background: #43A047;
 }
 
-input[type=submit] {
-  font: 18px bold;
-  width: 120px;
-  color: white;
-  background: blue;
-  margin-top: 15px;
-  margin-left: 85px;
+.form .tip {
+  font-family: "Lato", sans-serif;
+  margin: 15px 0 0;
+  color: #B3B3B3;
+  font-size: 12px;
+}
+
+.form .tip a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.form .tip a:hover {
+  color: #43A047;
+  text-decoration: underline;
 }
