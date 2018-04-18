@@ -1,4 +1,5 @@
 var express = require('express');
+require('dotenv').config();
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var expressSession = require('express-session');
@@ -17,7 +18,7 @@ app.use(expressSession({
   cookie: { maxAge: 60*60*1000 },
   store: new mongoStore({
     db: mongoose.connection.db,
-    url: process.env.MONGODB_URI || "mongodb://localhost:27017/accounts-manager",
+    url: process.env.MONGODB_URI,
     collection: 'sessions'
   })
 }));
