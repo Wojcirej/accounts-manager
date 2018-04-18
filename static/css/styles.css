@@ -24,10 +24,14 @@ body {
   background-color: #F2F2F2;
 }
 
-.login-page, .register-page {
+.form-container {
   width: 360px;
   padding: 8% 0 0 0;
   margin: auto;
+}
+
+.form-container.for-delete {
+  padding: 0px;
 }
 
 .form {
@@ -67,10 +71,23 @@ body {
   background: #43A047;
 }
 
+.form .delete input[type=submit] {
+  background: #DC3545;
+  margin: 0 auto 0;
+}
+
+.form .delete input[type=submit]:hover {
+  background: #A90212;
+}
+
 .form .tip {
   margin: 15px 0 0;
   color: #B3B3B3;
   font-size: 12px;
+}
+
+.tip.delete {
+  color: #DC3545;
 }
 
 .form .tip a {

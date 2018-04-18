@@ -6,21 +6,27 @@
 </head>
 <body>
   <% include ./partials/_nav.html %>
-  <div class="form-container">
-    <p class="form-header">Profile</p>
-    <form method="POST" action="/user/update">
-      <label>Username:</label>
-      <input type="text" name="username" ng-model="user.username" disabled><br>
-      <label>Email:</label>
-      <input type="email" name="email" ng-model="user.email"><br>
-      <label>Favorite color:</label>
-      <input type="text" name="color" ng-model="user.color"><br>
-      <input type="submit" value="Save changes">
-    </form>
-  </div>
-  <form method="POST" action="/user/delete">
-    <input type="submit" value="Delete">
-  </form>
+  <section class="form-container">
+    <main class="form">
+      <form method="POST" action="/user/update">
+        <label>Username</label>
+        <input type="text" name="username" ng-model="user.username" disabled><br>
+        <label>Email</label>
+        <input type="email" name="email" ng-model="user.email"><br>
+        <label>Favorite color</label>
+        <input type="text" name="color" ng-model="user.color"><br>
+        <input type="submit" value="Save changes">
+      </form>
+    </main>
+  </section>
+  <section class="form-container for-delete">
+    <main class="form">
+      <form method="POST" action="/user/delete" class="delete">
+        <input type="submit" value="Delete account">
+        <p class="tip delete">Warning: This operation is irreversible!</p>
+      </form>
+    </main>
+  </section>
   <hr>
   <% include ./partials/_alert.html %>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
