@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 body {
+  font-family: "Lato", sans-serif;
   background-color: #76B852;
 }
 
@@ -40,7 +41,6 @@ body {
 }
 
 .form input {
-  font-family: "Lato", sans-serif;
   outline: 0;
   background: #F2F2F2;
   width: 100%;
@@ -52,7 +52,6 @@ body {
 }
 
 .form input[type=submit] {
-  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   outline: 0;
   background: #4CAF50;
@@ -69,7 +68,6 @@ body {
 }
 
 .form .tip {
-  font-family: "Lato", sans-serif;
   margin: 15px 0 0;
   color: #B3B3B3;
   font-size: 12px;
@@ -83,4 +81,24 @@ body {
 .form .tip a:hover {
   color: #43A047;
   text-decoration: underline;
+}
+
+.alert {
+  display: inline-block;
+  padding: 20px;
+  background-color: #D1ECF1;
+  color: #0C5460;
+}
+
+.close-alert-btn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.close-alert-btn:hover {
+  color: #000000;
 }

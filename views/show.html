@@ -21,7 +21,8 @@
   <form method="POST" action="/user/delete">
     <input type="submit" value="Delete">
   </form>
-  <hr><%= msg %>
+  <hr>
+  <% include ./partials/_alert.html %>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="/static/js/userController.js"></script>
 </body>
