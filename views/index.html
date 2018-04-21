@@ -2,11 +2,20 @@
 <html>
 <head>
   <title>Main</title>
-  <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/static/css/layout.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/fontawesome-all.min.css" />
 </head>
 <body>
-  <% include ./partials/_nav.html %>
-  <hr>
-  <% include ./partials/_alert.html %>
+  <nav class="navbar">
+    <img src="/static/images/logo.png" class="logo">
+    <a href="#">About</a>
+    <a href="/user">Edit profile</a>
+    <a href="/logout">Sign out</a>
+    <i class="fas fa-search search"></i>
+    <img src="/static/images/rectangle-1.png" class="menu-icon-top">
+    <img src="/static/images/rectangle-2.png" class="menu-icon-middle">
+    <img src="/static/images/rectangle-1.png" class="menu-icon-bottom">
+  </nav>
 </body>
 </html>

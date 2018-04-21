@@ -18,7 +18,7 @@ app.use(expressSession({
   cookie: { maxAge: 60*60*1000 },
   store: new mongoStore({
     db: mongoose.connection.db,
-    url: process.env.MONGODB_URI,
+    url: process.env.MONGODB_URI || 'mongodb://localhost:27017/accounts-manager',
     collection: 'sessions'
   })
 }));
