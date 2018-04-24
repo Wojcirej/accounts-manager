@@ -9,6 +9,11 @@
   font-style: bold;
 }
 
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('./../../static/webfonts/playfairdisplay-regular.otf');
+}
+
 body {
   background-image: url("/static/images/background.png");
   width: 1920px;
@@ -83,4 +88,39 @@ body {
   width: 34px;
   height: 3px;
   background-color: #FFFFFF;
+}
+
+hr.nav-separator {
+  position: absolute;
+  top: 194px;
+  left: 100px;
+  background-color: rgba(255, 255, 255, 0.24);
+  width: 1721px;
+  height: 1px;
+  border: 0;
+}
+
+header p {
+  margin: 0px;
+  position: absolute;
+  top: 456px;
+  left: 599px;
+  font-family: 'PlayfairDisplay', sans-serif;
+  font-size: 140px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+main p {
+  position: absolute;
+  top: 613px;
+  left: 689px;
+  max-width: 543px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 34px;
+  text-align: center;
 }
