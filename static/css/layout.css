@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./../../static/webfonts/montserrat-regular.otf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./../../static/webfonts/montserrat-bold.otf');
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('./../../static/webfonts/playfairdisplay-regular.otf');
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("/static/images/background.png");
+  width: 100%;
+  height: 56.1%;
+}
+
+.logo {
+  position: absolute;
+  top: 78px;
+  left: calc((98 / 1920) * 100%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(0, 227, 254, 0);
+}
+
+.navbar {
+  display: block;
+  margin-top: 92px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 25px;
+}
+
+.search {
+  display: block;
+  position: absolute;
+  top: 86px;
+  left: calc((1725 / 1920) * 100%);
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.menu-icon-top {
+  display: block;
+  position: absolute;
+  top: 86px;
+  left: calc((1786 / 1920) * 100%);
+  width: 34px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+.menu-icon-middle {
+  display: block;
+  position: absolute;
+  top: 96px;
+  left: calc((1790 / 1920) * 100%);
+  width: 30px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+.menu-icon-bottom {
+  display: block;
+  position: absolute;
+  top: 104px;
+  left: calc((1786 / 1920) * 100%);
+  width: 34px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+hr.nav-separator {
+  position: absolute;
+  top: 194px;
+  left: calc((100 / 1920) * 100%);
+  background-color: rgba(255, 255, 255, 0.24);
+  width: 89.6%;
+  height: 1px;
+  border: 0;
+}
+
+header p {
+  margin: 0px;
+  position: absolute;
+  top: 456px;
+  left: calc((599 / 1920) * 100%);
+  font-family: 'PlayfairDisplay', sans-serif;
+  font-size: 140px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+main p {
+  position: absolute;
+  top: 613px;
+  left: calc((689 / 1920) * 100%);
+  max-width: 543px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 34px;
+  text-align: center;
+}
