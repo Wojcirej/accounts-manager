@@ -18,14 +18,15 @@ body {
   margin: 0px;
   padding: 0px;
   background-image: url("/static/images/background.png");
-  width: 100%;
-  height: 56.1%;
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 1280px;
 }
 
 .logo {
   position: absolute;
   top: 78px;
-  left: calc((98 / 1920) * 100%);
+  left: 98px;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -54,7 +55,7 @@ body {
   display: block;
   position: absolute;
   top: 86px;
-  left: calc((1725 / 1920) * 100%);
+  left: 1725px;
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 400;
@@ -66,7 +67,7 @@ body {
   display: block;
   position: absolute;
   top: 86px;
-  left: calc((1786 / 1920) * 100%);
+  left: 1786px;
   width: 34px;
   height: 3px;
   background-color: #FFFFFF;
@@ -76,7 +77,7 @@ body {
   display: block;
   position: absolute;
   top: 96px;
-  left: calc((1790 / 1920) * 100%);
+  left: 1790px;
   width: 30px;
   height: 3px;
   background-color: #FFFFFF;
@@ -86,7 +87,7 @@ body {
   display: block;
   position: absolute;
   top: 104px;
-  left: calc((1786 / 1920) * 100%);
+  left: 1786px;
   width: 34px;
   height: 3px;
   background-color: #FFFFFF;
@@ -95,9 +96,9 @@ body {
 hr.nav-separator {
   position: absolute;
   top: 194px;
-  left: calc((100 / 1920) * 100%);
+  left: 100px;
   background-color: rgba(255, 255, 255, 0.24);
-  width: 89.6%;
+  width: 1721px;
   height: 1px;
   border: 0;
 }
@@ -106,7 +107,7 @@ header p {
   margin: 0px;
   position: absolute;
   top: 456px;
-  left: calc((599 / 1920) * 100%);
+  left: 599px;
   font-family: 'PlayfairDisplay', sans-serif;
   font-size: 140px;
   font-weight: 400;
@@ -117,7 +118,7 @@ header p {
 main p {
   position: absolute;
   top: 613px;
-  left: calc((689 / 1920) * 100%);
+  left: 689px;
   max-width: 543px;
   font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
@@ -129,8 +130,8 @@ main p {
 
 .really-button {
   position: absolute;
-  top: 882px;
-  left: 798px;
+  top: 798px;
+  left: 882px;
   width: 163px;
   height: 46px;
   background-color: #da7074;
@@ -143,4 +144,74 @@ main p {
   font-size: 14px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+}
+
+.play-button {
+  position: absolute;
+  top: 1156px;
+  left: 919px;
+  width: 82px;
+  height: 82px;
+  outline: 1px solid rgba(0, 227, 254, 0);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.play-icon {
+  display: block;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  border-color: transparent transparent transparent #FFFFFF;
+}
+
+.smaller {
+  position: absolute;
+  top: 1280px;
+  width: 480px;
+  height: 500px;
+}
+
+.block-1 {
+  left: 0px;
+  background-image: url("/static/images/smaller-block-background-1.png");
+}
+
+.block-2 {
+  left: 480px;
+  background-image: url("/static/images/smaller-block-background-2.png");
+}
+
+.block-3 {
+  left: 960px;
+  background-image: url("/static/images/smaller-block-background-3.png");
+}
+
+.block-4 {
+  left: 1440px;
+  background-image: url("/static/images/smaller-block-background-4.png");
+}
+
+.smaller-block-header {
+  position: relative;
+  top: 346px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.smaller-block-content {
+  position: relative;
+  top: 346px;
+  font-family: "Georgia", sans-serif;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30px;
+  text-align: center;
 }
