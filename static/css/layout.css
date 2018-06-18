@@ -115,7 +115,7 @@ header p {
   text-align: center;
 }
 
-main p {
+section.main main p {
   position: absolute;
   top: 613px;
   left: 689px;

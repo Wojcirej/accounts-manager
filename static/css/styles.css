@@ -5,25 +5,6 @@ body {
   background-color: #76B852;
 }
 
-.navbar {
-  position: sticky;
-  top: 5px;
-  background-color: #333333;
-}
-
-.navbar a {
-  display: inline-block;
-  padding: 14px;
-  color: #F2F2F2;
-  text-align: center;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: #333333;
-  background-color: #F2F2F2;
-}
-
 .form-container {
   width: 360px;
   padding: 8% 0 0 0;
@@ -86,7 +67,7 @@ body {
   font-size: 12px;
 }
 
-.tip.delete {
+p.tip.delete {
   color: #DC3545;
 }
 
