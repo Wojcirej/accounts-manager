@@ -273,3 +273,22 @@ main.footer-block-content li ul {
   padding-left: 0px;
   margin: 0px;
 }
+
+.footer {
+  position: absolute;
+  top: 2184px;
+  width: 1920px;
+  height: 96px;
+  background-color: #000000;
+}
+
+.footer p {
+  position: relative;
+  top: 42px;
+  color: #FFFFFF;
+  font-family: "Georgia", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
+}
