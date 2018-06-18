@@ -312,6 +312,7 @@ main.footer-block-content li ul {
 }
 
 .footer p {
+  margin: 0;
   position: relative;
   top: 42px;
   color: #FFFFFF;
