@@ -128,10 +128,13 @@ main p {
   text-align: center;
 }
 
-.really-button {
+.really-button-section {
   position: absolute;
   top: 798px;
   left: 882px;
+}
+
+.really-button {
   width: 163px;
   height: 46px;
   background-color: #da7074;
@@ -144,6 +147,36 @@ main p {
   font-size: 14px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+}
+
+.red-line {
+  background-color: #DA7074;
+  border: 0;
+}
+
+.really-button-cross-line {
+  position: relative;
+  top: 30px;
+  z-index: -1;
+  left: -146px;
+  width: 449px;
+  height: 1px;
+}
+
+.vertical-left {
+  position: absolute;
+  top: 913px;
+  left: 958px;
+  height: 190px;
+  width: 1px;
+}
+
+.vertical-right {
+  position: absolute;
+  top: 933px;
+  left: 963px;
+  height: 190px;
+  width: 1px;
 }
 
 .play-button {
