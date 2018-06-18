@@ -215,3 +215,61 @@ main p {
   line-height: 30px;
   text-align: center;
 }
+
+.footer-block {
+  position: absolute;
+  top: 1895px;
+}
+
+.follow-us {
+  left: 197px;
+  width: 97px;
+  height: 167px;
+}
+
+.get-to-know-us {
+  left: 559px;
+  width: 144px;
+  height: 169px;
+}
+
+.locations {
+  left: 970px;
+  width: 95px;
+  height: 169px;
+}
+
+.our-mission {
+  left: 1357px;
+  width: 365px;
+  height: 169px;
+}
+
+.footer-block-header {
+  margin-bottom: 28px;
+  color: #141515;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.footer-block-content {
+  color: #565656;
+  font-family: "Georgia", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 26px;
+  text-align: left;
+}
+
+main.footer-block-content li {
+  list-style-type: none;
+}
+
+main.footer-block-content li ul {
+  padding-left: 0px;
+  margin: 0px;
+}
